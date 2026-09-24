@@ -1,0 +1,45 @@
+
+
+=========================================
+[+] Run Time: 2026-09-24 02:52:07
+[+] Tool: Port Scanner
+=========================================
+Enter target IP/Domain (e.g. scanme.nmap.org): 
+--- Multi-Threaded Scanning (Ports 1-100) on scanme.nmap.org ---
+
+[+] Port 22    : OPEN
+[+] Port 80    : OPEN
+
+[+] Fast scan finished!
+
+
+=========================================
+[+] Run Time: 2026-09-24 02:53:57
+[+] Tool: Directory Buster
+=========================================
+Enter target URL (e.g. http://scanme.nmap.org): 
+--- Fast Multi-Threaded Directory Scan on http://scanme.nmap.org ---
+
+[+] Found: http://scanme.nmap.org/images (Status: 200 OK)
+
+[+] Directory scan finished!
+
+
+=========================================
+[+] Run Time: 2026-09-24 02:54:24
+[+] Tool: Port Scanner
+=========================================
+Enter target IP/Domain (e.g. scanme.nmap.org): 
+--- Multi-Threaded Scanning (Ports 1-100) on scanme.nmap.org ---
+
+[+] Port 22    : OPEN
+[+] Port 80    : OPEN
+
+[+] Fast scan finished!
+
+
+=========================================
+[+] Run Time: 2026-09-24 02:57:29
+[+] Tool: HTTP Security Headers Checker
+=========================================
+Enter target URL (e.g. https://google.com or https://scanme.nmap.org): [-] Error fetching headers: <urlopen error [Errno 101] Network is unreachable>

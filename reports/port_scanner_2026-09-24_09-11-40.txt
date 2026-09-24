@@ -1,0 +1,11 @@
+=========================================
+[+] Run Time: 2026-09-24 09:11:40
+[+] Tool: Port Scanner
+=========================================
+Enter target IP/Domain (e.g. scanme.nmap.org): 
+--- Multi-Threaded Scanning (Ports 1-100) on scanme.nmap.org ---
+
+[+] Port 22    : OPEN
+[+] Port 80    : OPEN
+
+[+] Fast scan finished!
