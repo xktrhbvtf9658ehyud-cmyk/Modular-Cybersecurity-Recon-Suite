@@ -1,3 +1,31 @@
+import urllib.request
+import sys
+
+print("-" * 40)
+print("  Modular Recon - Header Grabber Module")
+print("-" * 40)
+
+target = input("أدخل رابط أو عنوان الموقع (مثال: scanme.nmap.org): ")
+
+if not target.startswith("http://") and not target.startswith("https://"):
+    target = "http://" + target
+
+print(f"\n[*] جاري سحب ترويسات الخادم من: {target}\n")
+
+try:
+    response = urllib.request.urlopen(target)
+    headers = response.info()
+
+    print("[+] الترويسات والخدمات المكتشفة:")
+    print("-" * 30)
+    for key, value in headers.items():
+        print(f"{key}: {value}")
+
+except Exception as e:
+    print(f"[!] حدث خطأ أثناء الاتصال: {e}")
+
+print("-" * 40)
+print("[*] انتهى الفحص.")
 import socket
 
 target = input("Enter target (e.g. scanme.nmap.org): ")
