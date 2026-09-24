@@ -7,18 +7,10 @@ def show_menu():
     print("[1] Port Scanner")
     print("[2] Header / Banner Grabber")
     print("[3] IP & Geo Recon")
-import os
-
-def show_menu():
-    print("=" * 50)
-    print("   Modular Cybersecurity Recon & Defense Suite")
-    print("=" * 50)
-    print("[1] Port Scanner")
-    print("[2] Header / Banner Grabber")
-    print("[3] IP & Geo Recon")
     print("[4] Password Strength Checker (Defensive)")
     print("[5] Suspicious Link Checker (Defensive)")
     print("[6] Secure Password Generator (Defensive)")
+    print("[7] Hash Identifier & Checker (Defensive)")
     print("[0] Exit (خروج)")
     print("=" * 50)
 
@@ -43,6 +35,9 @@ while True:
         input("\n[ضغط Enter للاستمرار...]")
     elif choice == "6":
         os.system("python modules/password_generator.py")
+        input("\n[ضغط Enter للاستمرار...]")
+    elif choice == "7":
+        os.system("python modules/hash_identifier.py")
         input("\n[ضغط Enter للاستمرار...]")
     elif choice == "0":
         print("\n[*] مع السلامة، جاري الخروج...")
