@@ -1,0 +1,21 @@
+k    choice = input("\n[*] اختر أداة: ").strip()
+    
+    if choice == "1":
+        os.system("python modules/port_scanner.py")
+        input("\n[ضغط Enter للاستمرار...]")
+    elif choice == "2":
+        os.system("python modules/banner_grabber.py")
+        input("\n[ضغط Enter للاستمرار...]")
+    elif choice == "3":
+        os.system("python modules/ip_recon.py")
+        input("\n[ضغط Enter للاستمرار...]")
+    elif choice == "4":
+        os.system("python modules/password_checker.py")
+        input("\n[ضغط Enter للاستمرار...]")
+    elif choice == "0":
+        print("\n[*] مع السلامة، جاري الخروج...")
+        break
+    else:
+        print("\n[!] خيار غير صحيح! الرجاء اختيار خيار صحيح.")
+        input("\n[ضغط Enter للاستمرار...]")
+
