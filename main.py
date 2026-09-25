@@ -13,12 +13,13 @@ def show_menu():
     print("[7] Hash Identifier & Checker (Defensive)")
     print("[8] System Security Checker (Defensive)")
     print("[9] Active Network Monitor (Defensive)")
+    print("[10] File Permission Checker (Defensive)")
     print("[0] Exit (خروج)")
     print("=" * 50)
 while True:
     show_menu()
     choice = input("\n[*] اختر أداة: ").strip()
-    
+
     if choice == "1":
         os.system("python modules/port_scanner.py")
         input("\n[ضغط Enter للاستمرار...]")
@@ -46,6 +47,10 @@ while True:
     elif choice == "9":
         from modules.net_monitor import monitor_network
         monitor_network()
+        input("\n[ضغط Enter للاستمرار...]")
+    elif choice == "10":
+        from modules.file_checker import check_files
+        check_files()
         input("\n[ضغط Enter للاستمرار...]")
     elif choice == "0":
         print("\n[*] مع السلامة، جاري الخروج...")
