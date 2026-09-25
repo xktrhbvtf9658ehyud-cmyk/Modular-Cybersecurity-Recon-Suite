@@ -11,6 +11,7 @@ def show_menu():
     print("[5] Suspicious Link Checker (Defensive)")
     print("[6] Secure Password Generator (Defensive)")
     print("[7] Hash Identifier & Checker (Defensive)")
+    print("[8] System Security Checker (Defensive)")
     print("[0] Exit (خروج)")
     print("=" * 50)
 
@@ -38,6 +39,9 @@ while True:
         input("\n[ضغط Enter للاستمرار...]")
     elif choice == "7":
         os.system("python modules/hash_identifier.py")
+        input("\n[ضغط Enter للاستمرار...]")
+    elif choice == "8":
+        os.system("python modules/system_checker.py")
         input("\n[ضغط Enter للاستمرار...]")
     elif choice == "0":
         print("\n[*] مع السلامة، جاري الخروج...")
